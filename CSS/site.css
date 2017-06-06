@@ -1,0 +1,52 @@
+/*------Main------*/
+
+.header {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/*------Background------*/
+html {
+  background: url('../img/tokyo-homepage.jpg')no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*------Navigation Elements------*/
+nav {
+  font-family: 'Quicksand', serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: block;
+}
+
+nav a {
+  padding: .5em;
+  display: block;
+}
+
+nav > ul > li:hover > a {
+  border-bottom: 2px solid #ffffff;
+  text-decoration: none;
+  max-width: inherit;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/*------Buttons------*/
+
+
+/*------Media Queries------*/
