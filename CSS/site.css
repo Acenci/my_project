@@ -15,7 +15,7 @@ html {
 }
 
 /*------Navigation Elements------*/
-nav {
+.header {
   font-family: 'Quicksand', serif;
   text-transform: uppercase;
   text-align: center;
@@ -46,7 +46,69 @@ a {
     text-decoration: none;
 }
 
-/*------Buttons------*/
+h1 {
+  font-size: 5em
+}
+
+#about {
+  display: flex;
+  font-family: 'Quicksand', serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  align-content: center;
+}
+
+/*------Lightbox------*/
+#lightbox {
+    position:fixed; /* keeps the lightbox window in the current viewport */
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:url(overlay.png) repeat;
+    text-align:center;
+}
+
+#lightbox p {
+    text-align:right;
+    color:#fff;
+    margin-right:20px;
+    font-size:12px;
+}
+
+#lightbox img {
+    box-shadow:0 0 25px #111;
+    -webkit-box-shadow:0 0 25px #111;
+    -moz-box-shadow:0 0 25px #111;
+    max-width:940px;
+}
+
+/*------Flexboxes------*/
 
 
 /*------Media Queries------*/
+/* SMARTPHONES PORTRAIT */
+@media only screen and (min-width: 300px) {
+
+
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (min-width: 480px) {
+
+
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) {
+
+
+}
+
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1024px) {
+
+
+} 

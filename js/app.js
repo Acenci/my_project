@@ -1,14 +1,17 @@
+//Create lightbox for about.png, when about is clicked.
+  //Capture the click event
+  $("#aboutLightbox a").click(function(event){
+    event.preventDefault();
+    var href = $(this).attr("href");
+    console.log(href);
+  });
+    //Show Overlay
+    //Show about.png
+  //When overlay is clicked hide lightbox
 
 
 
-//Create lightbox for image galleries "Places" & "Faces"
-
-
-// Create a lightbox for about me with me.jpg and about me text.
-
-
-// Create a drop down menu for "Photos", with "Places" & "Faces" as menu items.
-
+//Create lightbox or Overlay for image galleries, jQuery.
 
 //Create a contact box (Reference from Class Challenge 4)
 // ### Challenge 4
