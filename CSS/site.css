@@ -21,7 +21,7 @@ html {
   text-align: center;
 }
 
-nav ul {
+ul {
   list-style: none;
   padding: 0;
 }
@@ -50,6 +50,12 @@ h1 {
   font-size: 5em
 }
 
+h2 {
+  font-family: 'Quicksand', serif;
+  text-transform: uppercase;
+  color: #ffffff
+}
+
 #about {
   display: flex;
   font-family: 'Quicksand', serif;
@@ -59,9 +65,14 @@ h1 {
   align-content: center;
 }
 
+.photoGallery {
+    text-align: center;
+    align-content: center;
+}
+
 /*------Lightbox------*/
-#lightbox {
-    position:fixed; /* keeps the lightbox window in the current viewport */
+/*#lightbox {
+    position:fixed; /* keeps the lightbox window in the current viewport 
     top:0;
     left:0;
     width:100%;
@@ -70,14 +81,14 @@ h1 {
     text-align:center;
 }
 
-#lightbox p {
+/*#lightbox p {
     text-align:right;
     color:#fff;
     margin-right:20px;
     font-size:12px;
 }
 
-#lightbox img {
+/*#lightbox img {
     box-shadow:0 0 25px #111;
     -webkit-box-shadow:0 0 25px #111;
     -moz-box-shadow:0 0 25px #111;
@@ -111,4 +122,4 @@ h1 {
 @media only screen and (min-width: 1024px) {
 
 
-} 
+}
