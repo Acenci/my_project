@@ -3,6 +3,9 @@
 .header {
   text-align: center;
   padding-bottom: 20px;
+  font-family: 'Quicksand', serif;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 /*------Background------*/
@@ -15,12 +18,6 @@ html {
 }
 
 /*------Navigation Elements------*/
-.header {
-  font-family: 'Quicksand', serif;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 ul {
   list-style: none;
   padding: 0;
@@ -28,10 +25,10 @@ ul {
 
 nav ul li {
   display: block;
+  margin-top: 4px;
 }
 
 nav a {
-  padding: .5em;
   display: block;
 }
 
@@ -53,7 +50,8 @@ h1 {
 h2 {
   font-family: 'Quicksand', serif;
   text-transform: uppercase;
-  color: #ffffff
+  font-size: 2.5em;
+  color: #C22B00
 }
 
 #about {
@@ -70,56 +68,35 @@ h2 {
     align-content: center;
 }
 
-/*------Lightbox------*/
-/*#lightbox {
-    position:fixed; /* keeps the lightbox window in the current viewport 
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:url(overlay.png) repeat;
-    text-align:center;
+.photoGallery img {
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
-/*#lightbox p {
-    text-align:right;
-    color:#fff;
-    margin-right:20px;
-    font-size:12px;
+/*------Overlay------*/
+#overlay {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
 }
 
-/*#lightbox img {
-    box-shadow:0 0 25px #111;
-    -webkit-box-shadow:0 0 25px #111;
-    -moz-box-shadow:0 0 25px #111;
-    max-width:940px;
+#overlay img {
+  margin-top: 10%;
+  width: 70%;
 }
-
-/*------Flexboxes------*/
-
 
 /*------Media Queries------*/
-/* SMARTPHONES PORTRAIT */
-@media only screen and (min-width: 300px) {
-
-
-}
-
-/* SMARTPHONES LANDSCAPE */
-@media only screen and (min-width: 480px) {
-
-
-}
-
-/* TABLETS PORTRAIT */
+/* TABLETS & DESKTOPS PORTRAIT */
 @media only screen and (min-width: 768px) {
-
-
-}
-
-
-/* TABLET LANDSCAPE / DESKTOP */
-@media only screen and (min-width: 1024px) {
-
-
+.photoGallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  padding-right: 10 px;
 }
