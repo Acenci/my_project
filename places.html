@@ -9,18 +9,19 @@
     <link rel="stylesheet" href="css/site.css"></link>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <!-- jQuery -->
-    <link rel="javascript" href="js/app.js"></link>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Pretty Photo Gallery -->
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+    <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <header>
   <section class="header">
     <nav id="main-nav" role="navigation">
       <h1><a href="index.html">Tokyo</a></h1>
         <ul class="menu">
-          <li><a id="aboutLightbox" href="/img/about.png" alt="Artist information">About</a></li>
-          <li><a href="#">Locations</a></li>
-          <li><a href="#" id="contactBox">Contact</a></li>
+          <li><a id="aboutLightbox" href="img/about.png" alt="Artist information" width="50">About</a></li>
+          <li><a href="#">Neighborhoods</a></li>
+          <li><a href="subscribe.html">Subscribe</a></li>
         </ul>
       </nav>
     </section>
@@ -28,7 +29,11 @@
 <body>
   <!-- Create image elements for for each location: Ikebukuro, Asakusa, Ginza, Shinjuku, Harajuku, Shibuya, Chuo, Kotobuki, Ueno -->
     <ul class="photoGallery">
-  		<li><a href="img/asakusa1Cenci.jpg"><img src="img/asakusaTitle.jpg" width="300" alt="Sensoji Temple"></a></li>
+  		<li>
+        <a href="img/asakusa1Cenci.jpg" rel="prettyPhoto[gallery1]" title="Sensoji Temple Gate"><img src="img/asakusaTitle.jpg" width="300" alt="Sensoji Temple"></a>
+        <!--<a href="img/asakusa2Cenci.jpg" rel="prettyPhoto[gallery1]"></a>
+        <a href="img/asakusa3Cenci.jpg" rel="prettyPhoto[gallery1]"></a>-->
+      </li>
   		<li><a href="img/ikebukuro2Cenci.jpg"><img src="img/ikebukuroTitle.jpg" width="300" alt="Ikebukuro Station"></a></li>
   		<li><a href="img/shibuya1Cenci.jpg"><img src="img/shibuyaTitle.jpg" width="300" alt="Shibuya Coffee shop"></a></li>
   		<li><a href="img/shinjuku1Cenci.jpg"><img src="img/shinjukuTitle.jpg" width="300" alt="View form Tokyo Government Building"></a></li>
@@ -38,5 +43,11 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- JavaScript -->
     <script type="text/javascript" src="js/app.js"></script>
+    <!--prettyPhoto Bottom Tag -->
+    <script type="text/javascript" charset="utf-8">
+    $(document).ready(function(){
+      $("a[rel^='prettyPhoto']").prettyPhoto();
+        });
+    </script>
   </body>
 </html>

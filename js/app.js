@@ -15,17 +15,8 @@
 
     $overlay.show();
   });
-    //Show Overlay
-    //Show about.png
-
 
   //When overlay is clicked hide lightbox
   $overlay.click(function(){
     $overlay.hide();
   });
-
-
-//Create lightbox or Overlay for image galleries, jQuery Watch same videos, "Preform part 4 for caption."
-
-//Create a contact box (Reference from Class Challenge 4)
-// ### Challenge 4
