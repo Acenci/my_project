@@ -8,7 +8,7 @@
   $("body").append($overlay);
 
   //Capture the click event
-  $("#aboutLightbox").click(function(event){
+  $("#pageLightbox a").click(function(event){
     event.preventDefault();
     var imageLocation = $(this).attr("href");
     $image.attr("src", imageLocation);
@@ -20,3 +20,5 @@
   $overlay.click(function(){
     $overlay.hide();
   });
+
+//photoGallery Lightboxes
